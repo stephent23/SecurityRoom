@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% extends "template.html" %}
+
+{% block title %}Security Room | Stephen Tate{% endblock %}
+
+{% block scriptsAndStyles %}
+{% endblock %}
+
+{% block FullPage %}
+        <div id="fullpage">
+        <!--Front Page-->
+            <div class="section" id="firstPage" data-anchor="home">
+                <h1 class="siteTitle" id="siteTitle">Security Room</h1>
+                <div id="content">
+                    <p class="homePageSubTitleOne">Exploring Information and Cyber Security, and discussing the latest stories, trends, vulnerabilities and exploits facing the industry.</p>
+                </div>
+            </div>
+ 
+            <!--Blog-->
+            <div class="section" id="secondPage" data-anchor="blog">
+                <div class="content">
+                	<h2 class="subtitle">Security Room: Blog</h2>
+                	<div class="well well-lg">
+                    	<h4>World Password Day</h4>
+                    	<p>It was <a href="https://passwordday.org">World Password Day</a> on the 5th May 2016 - something that I didn't even know existed until it popped up on my Twitter feed. We hear all the time that we should be using secure passwords but what does this really mean? I think that it is reasonably obvious why we should be using so-called "secure" passwords but how we make our passwords secure can be an interesting problem to overcome. <a href="/blog/World_Password_Day">Read More...</a></p>
+                    	<p class="metadata">Sunday 8th May</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Recommended-->
+            <div class="section" id="thirdPage" data-anchor="recommended">
+                <div class="content">
+                    <h2 class="subtitle">Security Room: Recommended</h2>
+                    <div class="container">
+                    	<h3>Useful Tools</h3>
+					  	<div class="row">
+					    	<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" href="https://www.virustotal.com">
+					      				<h4 class="recommendedHeader">Virus Total</h4>
+					      			</a>
+					      			<p>Service that allows the free lookup and predominently static analysis of malware samples and suspicious URLs, highlighting which vendors are already protecting against the threat.</p>
+					      		</div>
+					    	</div>
+					    	<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" href="https://malwr.com">
+					      				<h4 class="recommendedHeader">Malwr</h4>
+					      			</a>
+					      			<p>A service that offers full dynamic malware analysis and provides results very quickly. Also, has a great open source intelligence (OSINT) engine.</p> 
+					      		</div>
+					    	</div>
+					    	<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" target="http://urlquery.net">
+					      				<h4 class="recommendedHeader">urlQuery</h4>
+					      			</a>
+					      			<p>A service for testing and analysing URLs. It also provides the ability to be able to view screenshots of the webpages. Also, it provides an API to submit URLs.</p>
+					      		</div>
+					    	</div>
+					  	</div>
+					  	<h3>Other Interesting Blogs</h3>
+					  	<div class="row">
+							<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" href="http://krebsonsecurity.com">
+					      				<h4 class="recommendedHeader">Krebs on Security</h4>
+					      			</a>
+					      		</div>
+					    	</div>
+					    	<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" href="https://nakedsecurity.sophos.com">
+					    				<h4 class="recommendedHeader">Naked Security</h4>
+					    			</a>
+					    		</div>
+					    	</div>
+					    	<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" href="http://www.scmagazine.com">
+					    				<h4 class="recommendedHeader">SC Magazine</h4>
+					    			</a>
+					    		</div>
+					    	</div>
+					  	</div>
+					  	<h3>Email Subscriptions</h3>
+					  	<div class="row">
+							<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" href="https://securosis.com/members/dailydigest">
+					      				<h4 class="recommendedHeader">Securosis</h4>
+					      			</a>
+					      		</div>
+					    	</div>
+					    	<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" href="https://public.govdelivery.com/accounts/USDHSUSCERT/subscriber/new">
+					    				<h4 class="recommendedHeader">US-CERT</h4>
+					    			</a>
+					    		</div>
+					    	</div>
+					    	<div class="col-md-3">
+					    		<div class="well well-sm">
+					    			<a target="_blank" href="https://www.sans.org/newsletters/">
+					    				<h4 class="recommendedHeader">SANS NewsBites</h4>
+					    			</a>
+					    		</div>
+					    	</div>
+					  	</div>
+					</div>
+                </div>
+            </div>
+
+            <!--About Me-->
+            <div class="section" id="fourthPage" data-anchor="about">
+                <div class="content">
+                	<h2 class="subtitle">Security Room: About</h2>
+                	<div class="well well-lg">
+                		<h4>About: The Site</h4>
+             			<p>Eventually, I hope that this will be a forum in which the latest Information and Cyber Security news can be discussed. I hope to be able to share some of the things that I have been working on and that the articles featured, will provide an insight into emerging threats, the challenges faced and encourage others to explore the exciting space of Information and Cyber Security. I hope that the articles will be appealing to all skill sets within the Information Security sector and also those that may have an interest in starting out in the industry. If you have any articles that you would like to contribute, topic suggestions that you would like to see discussed or any bugs on the website then please get in contact using the links on the navigation bar.</p>
+             		</div>
+             		<div class="well well-lg">
+                		<h4>About: Stephen Tate</h4>
+                		<div class="row">
+                			<div class="col-md-9">
+                				<p>I currently works as an Information Security Analyst within the Finance sector, having previously worked within the security organisation of a large pharmaceutical company. I graduated from the University of Kent in 2015, where I studied Computing and first developed a passion for Information Security. I have a particular interest in emerging threats, advanced attacks and incident response. Please feel free to contact me using any of the links below, if you have any questions about any of the articles that I have posted or if you have any questions about starting in the industry.</p>
+                			</div>
+                			<div class="col-md-3">
+                				<img src="static/images/me.jpg" alt="Who am I?" class="img-circle pull-xs-left img-fluid" id="aboutMeImage">
+                			</div>
+                		</div>
+                	</div>
+            	</div > 
+           	</div>
+        </div>
+{% endblock %}

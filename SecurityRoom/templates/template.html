@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    <!--JQUERY-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        
+    <!--BOOTSTRAP-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!--Font Awesome Icons-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!--FONTS-->
+        <!--Title-->
+        <link href='http://fonts.googleapis.com/css?family=Ek+Mukta:200' rel='stylesheet' type='text/css'>
+        <!--Sjt Font (Nav Bar)-->
+        <link href='http://fonts.googleapis.com/css?family=Oregano' rel='stylesheet' type='text/css'>
+        <!--Normal Text-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!--Custom Styling-->
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+
+    <!--Custom Scripts-->
+        <script type="text/javascript" src="static/javascript/toggles.js"></script>
+
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+        <script type="text/javascript" src="static/javascript/jquery.slimscroll.min.js"></script>
+    
+    <!--One page scroll-->
+        <script type="text/javascript" src="static/javascript/jquery.fullPage.js"></script>
+        <link rel="stylesheet" type="text/css" href="static/css/jquery.fullPage.css" />
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    anchors: ['home','blog','recommended','about'],
+                    autoScrolling: true,
+                    scrollOverflow: true
+                })
+            });
+        </script>
+        {% block scriptsAndStyles %}{% endblock %}
+    </head>
+    <body>
+        <header id="name">
+            <nav class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container-fluid">
+                   <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navElements" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/#home">Stephen Tate</a>
+                    </div>
+                    <div id="navElements" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li id="listObject_home"><a id="button_home" href="/#home">Home<span class="sr-only">(current)</span></a></li>
+                            <li><a href="/#blog">Blog Posts</a></li>
+                            <li><a href="/#recommended">Recommended</a></li>
+                            <li><a href="/#about">About</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="mailto:stephen@sjtate.co.uk?subject=Message from user at  sjtate.co.uk">
+                                    <i class="fa-1x fa fa-envelope-o"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/sj_tate">
+                                    <i class="fa-1x fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://github.com/stephent23">
+                                    <i class="fa-1x fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://uk.linkedin.com/in/stephen-tate-74b86555">
+                                    <i class="fa-1x fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <!--<li>
+                                <a id="copyright">&copy; 2016</a>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        {% block FullPage %}
+        {% endblock %}
+    </body>
+</html>
+
+
+
+

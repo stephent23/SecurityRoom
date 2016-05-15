@@ -1,0 +1,177 @@
+body {
+	width: 100%;
+	margin: auto;
+	background-color: #FEFEFA;
+	position: absolute;
+}
+
+.section {
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+
+#firstPage {
+	background-color: #5A5A5A;
+}
+
+#thirdPage {
+	background-color: #f7faf6;
+}
+
+/* Nav-bar custom styling*/
+.navbar-default {
+	border-right: none;
+	border-left: none;
+	box-shadow: none;
+}
+
+.container-fluid {
+ 	background-color: #FEFEFA;
+ 	border-right: none;
+ 	border-left: none;
+}
+
+.nav {
+	color: 	#5A5A5A;
+	font-size: 1.25em;
+	font-family: 'Ek Mukta', sans-serif;
+	font-weight: 500;
+}
+
+.navbar-nav > li {
+  	padding-left: 40px;
+ 	padding-right: 40px;
+}
+
+.navbar-right > li {
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#copyright {
+	font-size: 0.6em
+}
+
+/* Title of the web page - i.e. Security Room */
+.siteTitle { 
+	font-family: 'Ek Mukta', sans-serif;
+	color: #FEFEFA;
+	text-align: center;
+	font-size: 8vmax;
+	padding-top: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.homePageSubTitleOne {
+	margin: auto;
+	width: 70%;
+	padding-top: 1.5em;
+	text-align: center;
+	font-size: 1.5vmax;
+	font-family: 'Open Sans', sans-serif;
+	color: #FEFEFA;
+}
+
+
+h2 {
+	font-family: 'Ek Mukta', sans-serif;
+	color: #5A5A5A;
+}
+
+h3 {
+	font-family: 'Ek Mukta', sans-serif;
+	color: #5A5A5A;
+	text-align: left;
+}
+
+h4 {
+	font-family: 'Ek Mukta', sans-serif;
+	color: #5A5A5A;
+}
+
+.content {
+	margin: auto;
+	width: 70%;
+}
+
+/* Normal Text */
+p {
+	color: #5A5A5A;
+	text-align: justify;
+	font-size: 1em;
+	font-weight: 0.5em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.metadata {
+	font-style: italic;
+	color: #D4D4D4;
+	text-align: right;
+}
+
+/* moves the main content blocks down from other elements*/
+.well-lg {
+	background-color: #ffffff;
+	margin-top: 4em;
+	background-image: none;
+	margin-top: 2em;
+	margin-right: 6em;
+	margin-left: 6em;
+	padding-top: 0.75em;
+	padding-bottom: 0.5em;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+.well-sm {
+	background-color: #ffffff;
+	background-image: none;
+	overflow: hidden;
+}
+
+.container {
+	text-align: center;
+	margin: 2em;
+	overflow: hidden; 
+}
+
+.rowAbout {
+	position: relative;
+	margin-top: 2em;
+	margin-left: inherit;
+	margin-right: inherit;
+	object-position: center;
+}
+
+.recommendedHeader {
+	font-weight: bolder;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#aboutMeImage {
+	height: auto; 
+    width: auto; 
+    max-width: 10em; 
+    max-height: 10em;
+}
+
+/* This is for the blue pills that are on the about me page - for slide navigation */
+.centered-pills {  
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 1em;
+}
+.centered-pills ul.nav-pills {
+    display: inline-block
+}
+.centered-pills li {
+    display: inline
+}
+.centered-pills a {
+    float: left
+}
+* html .centered-pills ul.nav-pills, *+html .centered-pills ul.nav-pills {
+    display: inline
+}

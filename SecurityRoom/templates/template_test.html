@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Security Room | Stephen Tate</title>
+    <!--JQUERY-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+    <!--BOOTSTRAP-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!--Font Awesome Icons-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!--FONTS-->
+        <!--Title-->
+        <link href='http://fonts.googleapis.com/css?family=Ek+Mukta:200' rel='stylesheet' type='text/css'>
+        <!--Sjt Font (Nav Bar)-->
+        <link href='http://fonts.googleapis.com/css?family=Oregano' rel='stylesheet' type='text/css'>
+        <!--Normal Text-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!--Custom Styling-->
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+
+    <!--Custom Scripts-->
+        <script type="text/javascript" src="static/javascript/toggles.js"></script>
+
+    <!--One page scroll-->
+        <script type="text/javascript" src="static/javascript/jquery.fullPage.js"></script>
+        <link rel="stylesheet" type="text/css" href="static/css/jquery.fullPage.css" />
+
+
+        {% block scriptsAndStyles %}{% endblock %}
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    scrollOverflow: true
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="fullpage">
+        <!--Front Page-->
+            <div class="section" id="firstPage" data-anchor="home">
+                <header id="name">
+                    <h1 class="siteTitle" id="siteTitle">Security Room</h1>
+                    <nav class="navbar navbar-default navbar-fixed-bottom">
+                        <div class="container-fluid">
+                           <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navElements">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Security Room</a>
+                            </div>
+                            <div id="navElements" class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#about">Blog Posts</a></li>
+                                    <li><a href="#blog">Recommended</a></li>
+                                    <li><a href="#contact">Contact Me</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </header>
+                <div id="content">
+                    <p>This site contains the latest Information Security news</p>
+                </div>
+            </div>
+
+            <!--Contact Me Page-->
+            <div class="section" id="lastPage" data-anchor="contact">
+                <nav class="navbar navbar-default navbar-fixed-bottom">
+                    <div class="container-fluid">
+                       <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navElements">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Security Room</a>
+                        </div>
+                        <div id="navElements" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">Blog Posts</a></li>
+                                <li><a href="#blog">Recommended</a></li>
+                                <li class="active"><a href="#contact">Contact Me<span class="sr-only">(current)</span></a></li>
+                            </ul>
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </nav>
+                <div id="contactContent" class="mainContent">
+                    <table id="contactTable">
+                        <tr>
+                            <td>
+                                <i class="fa-2x fa fa-envelope-o"></i> <br /> <a href="mailto:stephen@sjtate.co.uk?subject=Message from user at sjtate.co.uk" class="normalText contactText">stephen@sjtate.co.uk</a> <br />
+                            </td>
+                            <td>
+                                <i class="fa-2x fa fa-twitter"></i> <br /> <a href="https://twitter.com/sj_tate" class="normalText contactText">sj_tate</a> <br />
+                            </td>
+                            <td>
+                                <i class="fa-2x fa fa-github"></i> <br /> <a href="http://github.com/stephent23" class="normalText contactText">stephent23</a> <br />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>
+
+
+
+
